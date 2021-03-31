@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ServiigirosVen</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <form action="" class="formulario">
+      <img src="Pagomovil.jpg" class="imgLogo" />
+
+      <h1 class="formulario__titulo">Transferencia PagoMovil</h1>
+      <h3 class="formulario__subtitulo">Serviimovil</h3>
+      <p class="formulario__parrafo">
+        Llena este pequeño formulario para realizar la transferencia por PagoMovil.
+ </p>
+
+      <label for="cliente" class="formulario__label">Nombre del punto de venta</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica cuál es tu nombre completo"
+      />
+      <label for="cuenta" class="formulario__label">Numero PagoMovil</label>
+      <input
+        id="cuenta"
+        type="number"
+        class="formulario__input"
+        placeholder="Digite numero de cuenta o pago movil"
+      />
+      <label for="nombre" class="formulario__label">Nombre</label>
+      <input
+        id="nombre"
+        type="text"
+        class="formulario__input"
+        placeholder="Digite nombre completo"
+      />
+      <label for="documento" class="formulario__label">Cedula</label>
+      <input
+        id="documento"
+        type="number"
+        class="formulario__input"
+        placeholder="Digite cedula"
+      />
+      <label for="pesos" class="formulario__label">Valor en pesos</label>
+      <input 
+        id="pesos"
+        type="text" 
+        placeholder="Digite valor en pesos $"
+        class="formulario__input"
+      />
+      <label for="bolivares" class="formulario__label">Valor en bolivares</label>
+      <input 
+        id="bolivares"
+        type="text"
+        class="formulario__input"
+        placeholder="Bss = $÷tasa"
+        input name="un_numero_decimal" value="" type="number" step="any"
+      />
+
+      <label for="bancos" class="formulario__label"
+        >Bancos</label
+      >
+      <select id="bancos" name="listabancos" class="formulario__input">
+        <option>Seleccionar...</option>
+        <option>Banesco</option>
+        <option>Banco De Venezuela</option>
+        <option>Provincial</option>
+        <option>Bod</option>
+        <option>Mercantil</option>
+        <option>100% Banco</option>
+        <option>Bancamiga</option>
+        <option>Activo</option> 
+        <option>Agricola</option>
+        <option>Bicentenario</option>
+        <option>Caroni</option>
+        <option>Banco Fondo Comun</option>
+        <option>Banco Banfanb</option>
+        <option>Bangente</option>
+        <option>Banco Tesoro</option>
+        <option>Banplus</option>
+      </select>
+
+      <div id="respuesta"></div>
+
+      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+</html>
